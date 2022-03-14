@@ -1,4 +1,4 @@
-<h1>Detecting-Imapasse-LAK2022</h1>
+<h1>Detecting-Impasse-LAK2022</h1>
 
 <h2>Description</h2>
 <p>This is the repository for the following paper at the LAK conference 2022:</p> 
