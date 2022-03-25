@@ -56,7 +56,7 @@ bert-for-tf2 v0.14.9
 tensowflow-gpu v2.4.1
 </pre>
 
-<p>Video-based Feature Extraction: Eye Gaze, Head Pose, Facial AUs, Body Pose</p> 
+<p>Video-based Feature Extraction: Eye Gaze, Head Pose, Facial AUs</p> 
 <pre>
 Feature extraction process was performed through command line arguments.
 </pre>
