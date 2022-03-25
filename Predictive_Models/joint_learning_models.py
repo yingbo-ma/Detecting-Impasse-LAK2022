@@ -10,58 +10,8 @@ from scipy import stats
 
 
 print("\n**************************************************************************************************")
-print("loading acoustic data...")
-Average_Time_Interval = 7 # we set the average time interval for each sentence is 7 seconds
-data_list = pd.read_csv('./acoustic_feature_data/acoustic_data.csv', delimiter='\t', header=None).values.tolist()
-acoustic_feature_lists = []
-
-for list in data_list:
-    new_list = list[0].strip('][').split(', ')
-    feature_list = []
-    for number in new_list:
-        if ("'" in number):
-            number = int(number[1:-1])
-        else:
-            number = int(number)
-        feature_list.append(number)
-
-    feature_list = feature_list[:Average_Time_Interval*128]
-    feature_list = np.array(feature_list)
-    feature_list = stats.zscore(feature_list).tolist() ## z-score normalization, standardized by mean and standard deviation of the input array
-    acoustic_feature_lists.append(feature_list)
-
-print("The length of the visual feature list is: ", len(acoustic_feature_lists))
-print("Done!")
-
-print("\n**************************************************************************************************")
-print("loading visual data...")
-data_list = pd.read_csv('./visual_feature_data/visual_feature_data.csv', delimiter='\t', header=None).values.tolist()
-visual_feature_lists = []
-
-for list in data_list:
-    new_list = list[0].strip('][').split(',')
-    if (len(new_list) == 1): # in case the visual feature list is empty
-        visual_feature_lists.append(visual_feature_lists[-1]) # if empty we append the lastest one directly
-    else:
-        feature_list = []
-        for number in new_list:
-            if ("'" in number):
-                number = float(number[1:-1])
-            else:
-                number = float(number)
-            feature_list.append(number)
-
-        if (len(feature_list) < Average_Time_Interval*82): # for visual feature we have 76 numbers for each second
-            feature_list += [0.0]*(Average_Time_Interval*82-len(feature_list))
-        else:
-            feature_list = feature_list[:Average_Time_Interval*82]
-
-        feature_list = np.array(feature_list)
-        feature_list = stats.zscore(feature_list).tolist()
-        visual_feature_lists.append(feature_list)
-
-visual_feature_lists = visual_feature_lists[:-1] # discard the last weird [SUB] token
-print("The length of the visual feature list is: ", len(visual_feature_lists))
+print("loading acoustic and visual features")
+# this part is for loading features from audio and video modalities
 print("Done!")
 
 print("\n**************************************************************************************************")
@@ -98,12 +48,10 @@ for token_index in range(len(utterance_tokens)-1):
     turn_token = turn_token[:-1]
     pair_tokens.append(turn_token)
 
-print("The length of the textual data is: ", len(pair_tokens))
-
 print("Done!")
 
 print("\n**************************************************************************************************")
-print("loading labels...")
+print("loading impasse labels...")
 
 label_list = pd.read_csv('./csv_data/label/label.csv', delimiter='\t', header=None).values.tolist()
 print("The length of the label list is: ", len(label_list))
