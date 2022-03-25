@@ -23,6 +23,14 @@ Yingbo Ma, Mehmet Celepkolu, Kristy Elizabeth Boyer
 <h3>Citation</h3>
 <pre></pre>
 
+<h2>Code Structure</h2>
+
+Directories: 
+
+(1) Features: this folder contains Python codes for feature extraction and post-processing.
+
+(2) Prediction_Models: this folder contains Python codes for prediction models.
+
 <h2>Prerequisites</h2>
 <p>Basics</p>
 <pre>
@@ -40,7 +48,21 @@ tensowflow-gpu 2.1.0
 keras 2.3.1
 </pre>
 
-<h2>Structure (Keep Updating...)</h2>
+<p>Language-based Feature Extraction: TF-IDF, Word2Vec, Pre-trained BERT, Speaker-Aware BERT</p> 
+<pre>
+nltk v3.5
+gensim v3.8.0
+bert-for-tf2 v0.14.9
+tensowflow-gpu v2.4.1
+</pre>
 
-<h2>Other Supplementary Materials</h2>
-<p></p>
+<p>Video-based Feature Extraction: Eye Gaze, Head Pose, Facial AUs, Body Pose</p> 
+<pre>
+Feature extraction process was performed through command line arguments.
+</pre>
+
+<p>Prediction Models</p> 
+<pre>
+tensowflow-gpu v2.4.1
+NVIDIA GPU + CUDA CuDNN
+</pre>
