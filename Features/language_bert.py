@@ -1,4 +1,4 @@
-# Python codes for extracting language-based pre-trained BERT feature described in Section 4.2
+# Python codes for extracting language-based pre-trained BERT feature
 import os
 os.environ['TF_XLA_FLAGS'] = '--tf_xla_enable_xla_devices'
 
