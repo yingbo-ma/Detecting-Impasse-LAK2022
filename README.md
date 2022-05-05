@@ -31,6 +31,8 @@ Directories:
 
 (2) Prediction_Models: this folder contains Python codes for prediction models.
 
+(3) For other data postprocessing details, please refer to my another personal repo: [Daily-Testing-Scripts](https://github.com/yingbo-ma/Daily-Research-Testing)
+
 <h2>Prerequisites</h2>
 <p>Basics</p>
 <pre>
