@@ -4,6 +4,8 @@
 <p>This is the repository for the following paper at the LAK conference 2022:</p> 
 <p><em>Detecting Impasse During Collaborative Problem Solving with Multimodal Learning Analytics</em></p>
 
+*[Paper Link](https://dl.acm.org/doi/abs/10.1145/3506860.3506865)*
+
 <h3>Introduction</h3>
 <p>Collaborative problem solving has numerous benefits for learners, such as improving higher-level reasoning and developing critical
 thinking. While learners engage in collaborative activities, they often experience <em>impasse</em>, a potentially brief encounter with differing
