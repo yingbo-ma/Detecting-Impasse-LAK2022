@@ -5,6 +5,7 @@
 <p><em>Detecting Impasse During Collaborative Problem Solving with Multimodal Learning Analytics</em></p>
 
 *[Paper Link](https://dl.acm.org/doi/abs/10.1145/3506860.3506865)*
+*[Presentation Slides](https://drive.google.com/file/d/1Uf0sbgPHCBubvKTnteW9igOsdJukxjEa/view?usp=sharing)*
 
 <h3>Introduction</h3>
 <p>Collaborative problem solving has numerous benefits for learners, such as improving higher-level reasoning and developing critical
