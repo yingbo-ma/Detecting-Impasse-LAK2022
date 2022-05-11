@@ -25,7 +25,15 @@ problem solving process. This line of research contributes to the development of
 Yingbo Ma, Mehmet Celepkolu, Kristy Elizabeth Boyer
 
 <h3>Citation</h3>
-<pre></pre>
+<pre>
+@inproceedings{ma2022detecting,
+  title={Detecting Impasse During Collaborative Problem Solving with Multimodal Learning Analytics},
+  author={Ma, Yingbo and Celepkolu, Mehmet and Boyer, Kristy Elizabeth},
+  booktitle={LAK22: 12th International Learning Analytics and Knowledge Conference},
+  pages={45--55},
+  year={2022}
+}
+</pre>
 
 <h2>Code Structure</h2>
 
